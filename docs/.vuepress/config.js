@@ -44,7 +44,8 @@ module.exports = {
           '/css/c-ccc'
         ]
       },
-    ]
+    ],
+    lastUpdated: 'Last Updated'
   }
 
 }
