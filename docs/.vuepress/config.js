@@ -1,10 +1,24 @@
+const moment = require('moment');
+moment.locale("zh-cn")
+
 module.exports = {
+  base: "/docs/",
   title: '跨越高山和大海的小鸟',
   description: '跨越高山和大海的小鸟',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: '跨越高山和大海的小鸟' }],
     ['meta', { name: 'KeyWords', content: 'vuepress 介绍, vuepress 说明, 跨越高山和大海的小鸟' }]
+  ],
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp) => {
+          return moment(timestamp).format("LLLL")
+        }
+      }
+    ]
   ],
   themeConfig: {
     logo: '/assets/img/bird.png',
