@@ -1,6 +1,13 @@
 module.exports = {
+  title: '跨越高山和大海的小鸟',
+  description: '跨越高山和大海的小鸟',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'author', content: '跨越高山和大海的小鸟' }],
+    ['meta', { name: 'KeyWords', content: 'vuepress 介绍, vuepress 说明, 跨越高山和大海的小鸟' }]
+  ],
   themeConfig: {
-    logo: '/assets/img/hero.png',
+    logo: '/assets/img/bird.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/about' },
